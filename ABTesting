@@ -1,0 +1,41 @@
+AB TESTING, old way of writing the genre fetching, I (and PHP storm :p) realized I had a lot of duplicate code
+the way I went with is putting them both in 1 function and just calling the fetch links and the html element
+
+async function getGenres() {
+    let response = await fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=022f0544ffb4d654b9f2edc2cb196360&language=en-US');
+    let genreData = await response.json();
+    //console.log(genreData);
+
+    for (let i = 0; i < genreData.genres.length; i++) {
+        movieArray.push(genreData.genres[i].name);
+        idArray.push(genreData.genres[i].id);
+    }
+
+    for (let i = 0; i < movieArray.length; i++) {
+        let option = document.createElement("option");
+        option.value = idArray[i];
+        option.text = movieArray[i];
+        movieSelectList.appendChild(option);
+    }
+}
+
+//TV Genres fetch
+async function getTvGenres() {
+    let response = await fetch('https://api.themoviedb.org/3/genre/tv/list?api_key=022f0544ffb4d654b9f2edc2cb196360&language=en-US');
+    let genreTvData = await response.json();
+    //console.log(genreTvData);
+
+    for (let i = 0; i < genreTvData.genres.length; i++) {
+        tvArray.push(genreTvData.genres[i].name);
+        tvIdArray.push(genreTvData.genres[i].id);
+    }
+
+    for (let i = 0; i < tvArray.length; i++) {
+        let option = document.createElement("option");
+        option.value = tvIdArray[i];
+        option.text = tvArray[i];
+        tvSelectList.appendChild(option);
+    }
+}
+
+

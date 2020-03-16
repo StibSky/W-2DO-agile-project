@@ -1,0 +1,65 @@
+* {
+    font-family: Allerta, serif;
+}
+
+body {
+    background-image: url("../images/bigwoof.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    text-align: center;
+    height: 92vh;
+}
+
+h1 {
+    font-family: Pacifico, serif;
+    font-size: 3em;
+    text-shadow: -10px 10px 0px rgb(130,40,80);
+}
+
+h2 {
+    text-indent: 30px;
+    font-size: large;
+
+}
+#movieInfo {
+    width: 22em;
+    text-align: left;
+    background: #1C1537;
+    padding: 1em;
+    border-radius: 12px;
+
+    height: fit-content;
+
+    margin: auto;
+    margin-left: 3em;
+
+}
+
+#navdiv {
+    font-family: Allerta, serif;
+}
+
+@media only screen and (max-width: 600px) {
+  #movieInfo {
+      margin: auto;
+     
+  }
+
+    body {
+        background-size: cover;
+    }
+}
+
+#movieHover {
+    cursor: url("../images/CDIcon.png "), auto  ;
+}
+
+#cdHover {
+    cursor: url("../images/movieIcon.png"), auto  ;
+}
+
+#drinkHover {
+    cursor: url("../images/drinkCursor.png"), auto  ;
+}
+

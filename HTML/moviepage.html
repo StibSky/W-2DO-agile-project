@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Get a random movie/series per genre, or look at the top 10s">
+    <meta name="Keywords" content="Movies, Series, random, Hollywood, Genres, Popular ">
+    <meta name="title" content="W@2DO movies generator">
+    <meta name="author" content="Steve Keersmaekers">
+    <meta name="viewport" content="width=device-width">
+    <title>MovieTime</title>
+    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../CSS/movies.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157425291-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157425291-1');
+    </script>
+
+
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="../index.html" >Home</a>
+    <a href="../HTML/moviepage.html" class="active">Movies</a>
+    <a href="../HTML/musicPage.html">Music</a>
+    <a href="../HTML/drinksPage.html">Drinks</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+<div id="bigMovieSeriesDiv">
+    <div id="bigMovieDiv">
+        <h1> Movies</h1>
+        <div id="movieSelectDiv"></div>
+        <div id="buttonDiv">
+            <button id="otherMovie">another movie</button>
+        </div>
+        <div class="posters">
+            <p id="toWatch">you should watch</p>
+
+            <figure><img id="poster" src="../images/subtlepurpp.jpg" alt=""></figure>
+        </div>
+    </div>
+
+
+    <div id="bigSeriesDiv">
+        <h1> Series</h1>
+        <div id="tvSelectDiv"></div>
+        <div id="buttonDiv2">
+            <button id="otherTv">another show</button>
+        </div>
+        <div class="posters">
+            <p id="toWatchTv">you should watch</p>
+            <figure><img id="tvPoster" src="../images/subtlepurpp.jpg" alt=""></figure>
+        </div>
+    </div>
+</div>
+
+<p class="popular"> 10 Most Popular Movies At This Time!</p>
+<div id="mostPopular"></div>
+
+<p class="popular"> 10 Most Popular Series At This Time!</p>
+<div id="mostPopularTv"></div>
+<script src="../JS/movies.js"></script>
+<script src="../JS/script.js"></script>
+
+</body>
+</html>

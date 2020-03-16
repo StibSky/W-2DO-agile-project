@@ -1,0 +1,233 @@
+* {
+    font-family: Allerta, serif;
+}
+body {
+    background: linear-gradient(to bottom, #7700aa, black);
+    color: whitesmoke;
+    padding-bottom: 30px;
+}
+
+#main-banner {
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/image-bar-pic.jpg");
+    display: block;
+
+}
+
+#banner-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/banner-2.jpg");
+    display: block;
+}
+
+.cocktail-recipe-name {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 30px;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.image-bar {
+    width: 100%;
+    display: block;
+    padding-bottom: 20px;
+
+}
+
+#box {
+    text-align: center;
+}
+#searchInput {
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+input[type="text"] {
+    background: #eeeeee;
+    width: 340px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+input[type="submit"] {
+    position: relative;
+    top: -1px;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 51px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #7700aa, black);
+    color: #fff;
+}
+input[type="submit"]:hover {
+    background: deeppink;
+    top: -1px;
+    height: 51px;
+}
+
+
+#search-drink-name, #drinkName {
+    font-size: 30px;
+    color: deeppink;
+}
+
+h4 {
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+h4.divider:before,
+h4.divider:after{
+    border-top: 1px solid deeppink;
+    border-bottom: 1px solid deeppink;
+    content: "";
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: .15em;
+}
+h4.divider:before {
+    right: 0.5em;
+    margin-left: -50%;
+
+}
+h4.divider:after {
+    left: 0.5em;
+    margin-right: -50%;
+
+}
+
+.mt-n1 {
+    margin-top: -0.25rem;
+}
+
+
+.popular-images-style {
+    align-content: center;
+}
+
+#search-drink-Image {
+    box-shadow: 0 5px 5px rgba(0,0,0,1);
+}
+
+#toHide {
+    visibility: hidden;
+}
+
+.col-sm:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: 0.5s;
+}
+/*******Random cocktail*******/
+
+#random-button {
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 80px;
+    border: 1px solid deeppink;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    margin: 2em;
+}
+
+#random-button:focus {
+    outline: none;
+}
+
+#random-button:hover {
+    background: deeppink;
+    color: black;
+    cursor: pointer;
+
+}
+
+#random-button:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+#random-button:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .1;
+    transition: .7s;
+}
+
+#randomContainer {
+    text-align: center;
+}
+p {
+    color: #fff;
+}
+
+#topDrinkBox {
+    position: relative;
+}
+
+.ingredients-name {
+    font-size: 22px;
+    justify-content: center;
+}
+
+
+#topDrinkBox:hover #search-drink-Instructions  {
+    visibility: visible;
+    opacity: 1;
+}
+
+#search-drink-Image:hover {
+
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    opacity: .4;
+    filter: blur(4px);
+}
+
+#drinkInstructions, #drinkGlass {
+    font-size: 18px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#drinkImage {
+    margin-left: 16%;
+}
+
+@media only screen and (min-width: 1000px) {
+    #search-drink-Instructions {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 4em;
+        right: 0;
+        visibility: hidden;
+        font-size: x-large;
+        width: 15em;
+        height: 1em;
+        color: white;;
+        text-align:center;
+
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+    }
+}
+
+#surprise {
+    color: ghostwhite;
+    padding-top: 15px;
+    font-size: 25px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Here</title>
+
+    <!-- fonts link  -->
+
+    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- css file -->
+    <link rel="stylesheet" type="text/css" href="../CSS/music.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- icon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+    <!-- meyer-reset
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"> -->
+
+    <!-- Meta Tags-->
+    <meta name="description" content="Free music listen and read the lyrics">
+    <meta name="Keywords" content="music, Lyrics, dance, mood ">
+    <meta name="title" content="listen to music, read the lyrics for specific music">
+    <meta name="Robots" content="enter, search, listen, read, have fun">
+    <meta name="author" content="api, free">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157425291-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157425291-1');
+    </script>
+
+
+</head>
+<body>
+<div id="navdiv">
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" >Home</a>
+        <a href="moviepage.html">Movies</a>
+        <a href="musicPage.html" class="active">Music</a>
+        <a href="drinksPage.html">Drinks</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+<div class="text-light text-center mt-4">
+    <h3 class="">Welcome to Music store</h3>
+</div>
+
+
+<div class=" container  ">
+    <div id="musicInput" class=" mt-3 text-center">
+        <input class="py-1" type="text" id="musicName" placeholder=" Music name "/>
+        <input class="py-1" type="text" id="artistName" placeholder=" Artist name "/>
+        <button type="button" id="callApi" class=" btn btn-outline-dark buttonSearch" >Search</button>
+    </div>
+
+    <h5 class="text-light text-center mt-3" id="songTitle"></h5>
+</div><!-- enter music and artist name -->
+
+<div id="createAudioDiv">
+    <div class="container-audio"  id="audioDiv">
+        <audio controls  loop autoplay >
+            <source id="songSource" src="https://cdns-preview-1.dzcdn.net/stream/c-107589e95250d62b0198be5488381d0e-2.mp3" type="audio/ogg">
+        </audio>
+    </div><!-- audio url-->
+</div><!-- get audio url after crate a new one-->
+
+<div class="container-audio text-center">
+    <div class="colum1 ml-1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+    <div class="colum1">
+        <div class="row"></div>
+    </div>
+
+</div> <!-- audio style-->
+
+<div class="container-audio text-center" id="areaDiv">
+    <h5 id="addText" >
+        This is the Lyrics for your song my sweety
+    </h5>
+</div><!-- Lyrics style-->
+
+<!-- Bootstrap script -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- script file -->
+<script src="../JS/music.js" > </script>
+<script src="../JS/script.js"></script>
+
+</body>
+</html>

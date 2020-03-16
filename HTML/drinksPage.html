@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drinks</title>
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <!------------Links (CSS)------------------>
+    <link rel="stylesheet" href="../CSS/drinks.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!------------Link icon------------------>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+    <!------------Meta Tags------------------>
+    <meta charset="UTF-8">
+    <meta name="description" content="Search cocktail recipes">
+    <meta name="Keywords" content="drink, cocktails, recipes">
+    <meta name="title" content="Search a cocktail or click a random cocktail">
+    <meta name="Robots" content="enter, search, listen, read, have fun">
+    <meta name="author" content="api, free">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157425291-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157425291-1');
+    </script>
+
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="../index.html" >Home</a>
+    <a href="../HTML/moviepage.html" >Movies</a>
+    <a href="../HTML/musicPage.html">Music</a>
+    <a href="../HTML/drinksPage.html" class="active">Drinks</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<!------------Searching a cocktail----------->
+<section id="main-banner">
+    <h1 class="text-light text-center cocktail-recipe-name">Cocktail Recipes</h1>
+    <div class="container" id="box">
+        <input type="text" id="searchInput" placeholder="Search a cocktail..." name="search">
+        <input id="searchButton" type="submit" name="" value="SEARCH">
+    </div>
+    <div class="image-bar"></div>
+    <div id="toHide">
+    <p class="text-center" id="search-drink-name">""</p>
+
+    <div class="container m-5">
+
+        <div class="row">
+            <div class="col-6 text-center mb-5" id="topDrinkBox">
+                <img src="" alt="" id="search-drink-Image" class="w-75"/>
+                <p id="search-drink-Instructions">Instructions</p>
+            </div> <!-- main image -->
+
+            <div class="col-6">
+
+                <div class="ingredients-name row text-center">
+                    <p class="text-light">Ingredients</p>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-6 text-center">
+                        <div>
+                            <img src="" alt="" id="search-ingredient-Image1"/>
+                            <p id="search-ingredient1">Ingredient 1</p>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div>
+                            <img src="" alt="" id="search-ingredient-Image2"/>
+                            <p id="search-ingredient2">Ingredient 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6 text-center">
+                        <div>
+                            <img src="" alt="" id="search-ingredient-Image3"/>
+                            <p id="search-ingredient3">Ingredient 3</p>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div>
+                            <img src="" alt="" id="search-ingredient-Image4"/>
+                            <p id="search-ingredient4">Ingredient 4</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mb-5">
+                    <div class="col-6 text-center">
+                        <div>
+                            <img src="" alt="" id="search-ingredient-Image5"/>
+                            <p id="search-ingredient5">Ingredient 5</p>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div>
+                            <img src="" alt="" id="search-ingredient-Image6"/>
+                            <p id="search-ingredient6">Ingredient 6</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ingredient images -->
+        </div>
+    </div>
+    </div>
+</section>
+
+<!------------Most popular drinks------------------>
+<div class="container-fluid">
+    <h4 class="divider">Most Popular Cocktails</h4>
+
+    <div class= "container" id="most-popular-drinks">
+        <div class="row w-100 m-5 "> <!-- First row for images -->
+            <div class="col-sm " id="col0">
+                <div id="colname0"></div>
+            </div>
+            <div class="col-sm " id="col1">
+                <div id="colname1"></div>
+            </div>
+            <div class="col-sm " id="col2">
+                <div id="colname2"></div>
+            </div>
+        </div>
+        <div class="row w-100 m-5"> <!-- Second row for images -->
+            <div class="col-sm" id="col3">
+                <div id="colname3"></div>
+            </div>
+            <div class="col-sm" id="col4">
+                <div id="colname4"></div>
+            </div>
+            <div class="col-sm" id="col5">
+                <div id="colname5"></div>
+            </div>
+        </div>
+        <div class="row w-100 m-5"> <!-- Third row for images -->
+            <div class="col-sm" id="col6">
+                <div id="colname6"></div>
+            </div>
+            <div class="col-sm" id="col7">
+                <div id="colname7"></div>
+            </div>
+            <div class="col-sm" id="col8">
+                <div id="colname8"></div>
+            </div>
+        </div>
+        <div class="row w-100 m-5"> <!-- Forth row for images -->
+            <div class="col-sm" id="col9">
+                <div id="colname9"></div>
+            </div>
+            <div class="col-sm" id="col10">
+                <div id="colname10"></div>
+            </div>
+            <div class="col-sm mb-4" id="col11">
+                <div id="colname11"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------Getting a random cocktail------------------>
+<section >
+    <div id="banner-2">
+    <div id="randomContainer">
+        <h2 id="surprise">Don't you know what you wanna drink? Just be surprised by clicking on the button below </h2>
+        <button type="button" id="random-button">Click me<i class="random.button"></i></button>
+    </div>
+    </div>
+        <p class="text-center mt-4 mb-3" id="drinkName"></p>
+        <div class="container m-5">
+            <div class="row">
+                <div class="drink-image-S col-6">
+                    <img src="" alt="" id="drinkImage" class="w-75"/>
+                </div> <!-- main image -->
+
+                <div class="col-6">
+                    <div class="row mb-3">
+                        <div class="col-6 text-center">
+                            <div>
+                                <img src="" alt="" id="ingredientImage1"/>
+                                <p id="drinkIngredient1"></p>
+                            </div>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div>
+                                <img src="" alt="" id="ingredientImage2"/>
+                                <p id="drinkIngredient2"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6 text-center">
+                            <div>
+                                <img src="" alt="" id="ingredientImage3"/>
+                                <p id="drinkIngredient3"></p>
+                            </div>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div>
+                                <img src="" alt="" id="ingredientImage4"/>
+                                <p id="drinkIngredient4"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6 text-center">
+                            <div>
+                                <img src="" alt="" id="ingredientImage5"/>
+                                <p id="drinkIngredient5"></p>
+                            </div>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div>
+                                <img src="" alt="" id="ingredientImage6"/>
+                                <p id="drinkIngredient6"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ingredient images -->
+            </div>
+        </div>
+    <p class="text-center" id="drinkInstructions"></p>
+    <p class="text-center" id="drinkGlass"></p>
+</section>
+
+<!------------Links (Bootstrap)------------------>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!------------Links (JavaScript file)------------------>
+<script src="../JS/drinks.js"></script>
+<script src="../JS/script.js"></script>
+</body>
+</html>

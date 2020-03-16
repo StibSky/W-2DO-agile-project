@@ -1,0 +1,82 @@
+* {
+    font-family: Allerta, serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #7700aa, black);
+    color: whitesmoke;
+}
+
+
+.imagePopular {
+    padding: 10px
+}
+
+/*spreading images out a bit */
+.imageList {
+    padding: 1em;
+}
+
+/* zoom hover effect on popular movies */
+.imageList:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: 0.5s;
+}
+
+#otherMovie, #otherTv {
+    background: linear-gradient(to left, #7700aa, #8800ff);
+    border: none;
+    border-radius: 12px;
+    color: antiquewhite;
+    padding: 1em;
+    margin-top: 1em;
+
+
+}
+
+#myMovieSelect, #myTvSelect {
+    background: purple;
+    color: whitesmoke;
+    width: 10em;
+    height: 3em;
+    font-size: medium;
+    border: solid rgb(80,55,120);
+
+}
+
+#buttonDiv, #movieSelectDiv, #tvSelectDiv, #buttonDiv2, .posters, #bigMovieSeriesDiv {
+    text-align: center;
+}
+
+.popular {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#bigSeriesDiv, #bigMovieDiv {
+    display: inline-block;
+    margin: 5em;
+
+}
+
+
+#poster, #tvPoster {
+    width: 185px;
+    height: 275px;
+    border: black solid;
+
+}
+
+#myTopnav {
+    font-family: Allerta, serif;
+}
+
+#mostPopular {
+    text-align: center;
+}
+
+#mostPopularTv {
+    text-align: center;
+}
+
+/* text align center divs are used to align content of my page, looking in a smoother way than adding divs */
