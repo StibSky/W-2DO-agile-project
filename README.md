@@ -1,7 +1,7 @@
 # agile-W-2Do
 project to make a startup using an API
 
-Link to our site: https://erick-medina.github.io/agile-W-2Do/
+Link to our site: https://xenoxinius.github.io/W-2DO-agile-project/
 
 ![homePage](https://raw.githubusercontent.com/erick-medina/agile-W-2Do/master/images/homePage.png)
 
